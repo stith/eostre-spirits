@@ -2,7 +2,7 @@
 
 A realtime paper lantern mobile tracing laser.
 
-<img src="media/deployed.jpg" width="250" />
+<img src="media/deployed.jpg" width="400" />
 
 A TouchDesigner patch enabling an ILDA-based stage laser to track, in real time, the position of objects in free space
 
@@ -17,7 +17,7 @@ The project consists of the following parts:
 
 ### TouchDesigner
 
-<img src="media/patch.png" width="250" />
+<img src="media/patch.png />
 
 The patch works in these stages:
 
@@ -44,7 +44,7 @@ This OP provides a 3x3 grid of points that can be adjusted to connect our ideal 
 #### Control panel
 
 
-<img src="media/controls.png" width="250" />
+<img src="media/controls.png" width="500" />
 
 - Top row: **Color source**. Can be set to flat white/red/green/blue for simple deployments, or you can select Resolume (Syphon) or NDI to map the output of a VJ tool like Resolume Arena or Synesthesia 
 - Second row: **Shape**. Which shape to draw on each detected blob.
@@ -57,7 +57,7 @@ This OP provides a 3x3 grid of points that can be adjusted to connect our ideal 
 
 Sometimes, the set of vectors that you want to draw ends up being too much for your laser hardware, resulting in distorted shapes, flickering, or missing portions of your image. This patch provides several options for tuning the rendering performance so you can get a stable image.
 
-1. *Laser device properties*: The `laser` and `laserdevice1` OPs. These are built-in OPs which have a wealth of tuning parameters. Consult TouchDesigner's [Laser CHOP documentation](https://docs.derivative.ca/Laser_CHOP) for details on tuning.
+1. *Laser device properties*: The `laser1` and `laserdevice1` OPs. These are built-in OPs which have a wealth of tuning parameters. Consult TouchDesigner's [Laser CHOP documentation](https://docs.derivative.ca/Laser_CHOP) for details on tuning.
 2. *Shape selection*: Additionally, the "Render count" and "Shape #" buttons in the main patch controls can be used. The "Render count" and "Shape #" buttons both accomplish the same thing, excluding shapes from the final output to the laser. The slider lets you just arbitrarily remove shapes from "the end" of the list, and the buttons let you choose which shapes to exclude.
 
 Depending on your laser, it can take some fiddling to get a stable image. Refer to your laser's spec sheet and any numbers that might be exposed from your laser manufacturer's suggested control software for a good starting point.
