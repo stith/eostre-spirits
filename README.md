@@ -17,7 +17,7 @@ The project consists of the following parts:
 
 ### TouchDesigner
 
-<img src="media/patch.png />
+<img src="media/patch.png" />
 
 The patch works in these stages:
 
@@ -49,7 +49,7 @@ This OP provides a 3x3 grid of points that can be adjusted to connect our ideal 
 - Top row: **Color source**. Can be set to flat white/red/green/blue for simple deployments, or you can select Resolume (Syphon) or NDI to map the output of a VJ tool like Resolume Arena or Synesthesia 
 - Second row: **Shape**. Which shape to draw on each detected blob.
 - "**Wiggle speed**": For the "wave" shape, how fast should it wiggle?
-- **Shape selector**: Depending on your laser specs, the galvos might have trouble keeping up with drawing too many points. See [#Rendering performance](Rendering performance) below for more details
+- **Shape selector**: Depending on your laser specs, the galvos might have trouble keeping up with drawing too many points. See [Rendering performance](#rendering-performance) below for more details
 - **Laser controls**: Arm the laser, set its intensity.
 - ** Scale / Rotation controls**: Adjust the size of the shapes, and their rotation speed. Fun with the spiral!
 
