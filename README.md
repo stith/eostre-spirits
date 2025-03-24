@@ -2,7 +2,7 @@
 
 A realtime paper lantern mobile tracing laser.
 
-!()[media/deployed.jpg]
+<img src="media/deployed.jpg" width="250" />
 
 A TouchDesigner patch enabling an ILDA-based stage laser to track, in real time, the position of objects in free space
 
@@ -17,7 +17,7 @@ The project consists of the following parts:
 
 ### TouchDesigner
 
-![](media/patch.png)
+<img src="media/patch.png" width="250" />
 
 The patch works in these stages:
 
@@ -37,15 +37,14 @@ Does some pre-processing to create distinct blobs, then runs the core python scr
 
 Ultimately, the laser needs to hit the lanterns. No matter how carefully we align the camera on top the laser, there'll still need to be corrections to account for things like the warping of the lens and the way the laser galvos move in physical space.
 
-![](media/adjustments.png)
-
-![](media/warped.png)
+<img src="media/adjustments.png" width="250" /> <img src="media/warped.png" width="250" />
 
 This OP provides a 3x3 grid of points that can be adjusted to connect our ideal digital calculations into the messy real world. In the field, you can adjust your camera positioning to get the alignment roughly correct, and then use this grid warping to get the lasers to land exactly on the lanterns.
 
 #### Control panel
 
-![](media/controls.png)
+
+<img src="media/controls.png" width="250" />
 
 - Top row: **Color source**. Can be set to flat white/red/green/blue for simple deployments, or you can select Resolume (Syphon) or NDI to map the output of a VJ tool like Resolume Arena or Synesthesia 
 - Second row: **Shape**. Which shape to draw on each detected blob.
